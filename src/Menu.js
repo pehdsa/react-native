@@ -9,8 +9,26 @@ import Plataformas from './components/Plataformas'
 import ValidarProps from './components/ValidarProps'
 import Evento from './components/Evento'
 import Avo from './components/ComunicacaoDireta'
+import TextoSincronizado from './components/ComunicacaoIndireta'
+import ListaFlex from './components/ListaFlex'
+import Flex from './components/Flex'
+import Calculadora from './calculadora/App'
 
 export default createDrawerNavigator({
+    Calculadora: {
+        screen: () => <Calculadora />         
+    },  
+    Flex: {
+        screen: () => <Flex />         
+    },  
+    ListaFlex: {
+        screen: () => <ListaFlex />,
+        navigationOptions: { title: 'Lista Flex' }
+    }, 
+    TextoSincronizado: {
+        screen: () => <TextoSincronizado />,
+        navigationOptions: { title: 'Texto Sincronizado' } 
+    }, 
     Avo: {
         screen: () => <Avo nome="Mauro" sobrenome="Duarte" />,
         navigationOptions: { title: 'Comunicação Direta' }

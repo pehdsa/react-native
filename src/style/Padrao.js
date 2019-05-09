@@ -27,6 +27,12 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       paddingHorizontal: 20
     } 
+
+    // CALCULADORA
+
+
+    
+
 });
 
   export default styles
